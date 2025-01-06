@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Giovanni</title>
+  <link rel="stylesheet" href="About.css">
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      color: white;
+      z-index: 1000;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .brand-name {
+      font-size: 18px;
+      font-weight: bold;
+      color:black;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #FFD700; 
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+    }
+
+    .login,
+    .cart {
+      margin-left: 15px;
+    }
+
+    .cart {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -5px;
+      right: -10px;
+      background: red;
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 50%;
+    }
+
+    
+    .about-container {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .about-text h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="./Assets/black-fox-logo-c588ad50-8255-4af5-9dc2-5a7a83281b46.jpg" alt="Logo" class="logo">
+        <span class="brand-name">Giovanni Menswear</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./cloth.html" class="active">Home</a></li>
+          <li><a href="#store">Store</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#pos">Points of Sale</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <div class="login">
+          <span class="icon user-icon"></span>
+          <a href="#login">Log In</a>
+        </div>
+        <div class="cart">
+          <span class="icon cart-icon"></span>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="about-container">
+    <div class="about-text">
+      <h1>About Giovanni</h1>
+      <p>
+      
+The Story of Giovanni Menswear
+I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+
+​
+
+This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="./Assets/alexandra-gorn-WF0LSThlRmw-unsplash.jpg" alt="About Giovanni">
+    </div>
+  </div>
+</body>
+</html>

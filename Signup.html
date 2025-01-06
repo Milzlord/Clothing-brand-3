@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: center;
+    }
+
+    .signup-container h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .signup-container p {
+      margin: 10px 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .signup-container a {
+      color: #c49b63;
+      text-decoration: none;
+    }
+
+    .signup-container button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .google-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      color: #333;
+    }
+
+    .facebook-btn {
+      background-color: #3b5998;
+      color: white;
+    }
+
+    .email-btn {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .separator {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .separator::before,
+    .separator::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .separator:not(:empty)::before {
+      margin-right: 10px;
+    }
+
+    .separator:not(:empty)::after {
+      margin-left: 10px;
+    }
+
+    .checkbox-container {
+      text-align: left;
+      margin: 10px 0;
+    }
+
+    .checkbox-container input {
+      margin-right: 5px;
+    }
+
+    .checkbox-container a {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h1>Sign Up</h1>
+    <p>Already a member? <a href="#">Log In</a></p>
+    <button class="google-btn">Sign up with Google</button>
+    <button class="facebook-btn">Sign up with Facebook</button>
+    <div class="separator">or</div>
+    <button class="email-btn">Sign up with email</button>
+    <div class="checkbox-container">
+      <input type="checkbox" id="public-profile" checked>
+      <label for="public-profile">Sign up to this site with a public profile. <a href="#">Read more</a></label>
+    </div>
+  </div>
+</body>
+</html>
